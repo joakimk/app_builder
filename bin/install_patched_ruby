@@ -1,0 +1,5 @@
+#!/bin/sh
+rvm get head
+rvm reload
+rvm install ruby-1.9.2-p180 --patch vendor/load.patch -n patched
+

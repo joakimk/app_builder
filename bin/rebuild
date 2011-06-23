@@ -1,0 +1,2 @@
+#!/bin/sh
+ rm -rf testapp; time app_builder new testapp && app_builder scaffold testapp; cd testapp; mvim .

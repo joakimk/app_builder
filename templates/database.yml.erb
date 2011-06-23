@@ -1,0 +1,18 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  min_messages: warning
+  database: <%= @name %>_development
+  pool: 5
+  username: <%%= ENV['USER'] %>
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  min_messages: warning
+  database: <%= @name %>_test
+  pool: 5
+  username: <%%= ENV['USER'] %>
+  password:
+
