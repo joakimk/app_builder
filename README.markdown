@@ -2,6 +2,9 @@ A script to setup a complete rails 3.1 stack.
 
 Created to experiment with various new tools.
 
+A more conventional implementation of something like this might be the bootstrap script from this page:
+http://blog.madebydna.com/all/code/2010/10/11/cooking-up-a-custom-rails3-template.html
+
 Installing
 ___
 
