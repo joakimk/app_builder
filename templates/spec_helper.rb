@@ -6,8 +6,6 @@ Spork.prefork do
   require 'rspec/rails'
   require 'nulldb_rspec'
 
-  ActiveRecord::Base.establish_connection :adapter => :nulldb
-
   Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 
   RSpec.configure do |config|
@@ -30,5 +28,6 @@ Spork.prefork do
 end
 
 Spork.each_run do
+  ActiveRecord::Base.establish_connection :adapter => :nulldb
 end
 
