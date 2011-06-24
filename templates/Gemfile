@@ -24,5 +24,7 @@ group :development, :test do
   gem 'guard-rspec'
   gem 'engineyard'
   gem 'fabrication'
+  gem 'capybara'
+  gem 'akephalos', :git => 'https://github.com/Nerian/akephalos.git', :ref => "2a7deddf79fe1d6055ba"
 end
 
