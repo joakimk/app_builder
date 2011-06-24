@@ -9,6 +9,7 @@ Spork.prefork do
   require 'capybara/rspec'
   require 'akephalos'
   Capybara.javascript_driver = :akephalos
+  Evergreen.driver = :akephalos
 
   Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 

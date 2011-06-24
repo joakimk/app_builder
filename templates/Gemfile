@@ -26,5 +26,6 @@ group :development, :test do
   gem 'fabrication'
   gem 'capybara'
   gem 'akephalos', :git => 'https://github.com/Nerian/akephalos.git', :ref => "2a7deddf79fe1d6055ba"
+  gem 'evergreen', :require => 'evergreen/rails'
 end
 
