@@ -29,7 +29,7 @@ class AppBuilder < Thor
     source "$HOME/.rvm/scripts/rvm" &&
     cd #{name} &&
     rvm @#{name} &&
-    bundle &&
+    bundle install --binstubs .bundle/bin &&
     rails g rspec:install
 STR
   
